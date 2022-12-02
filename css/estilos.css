@@ -1,0 +1,33 @@
+body{
+    background-color: rgb(75, 156, 152);
+}
+
+h1{
+    color: rgb(255, 184, 160);
+    text-shadow: 2px -2px rgb(66, 62, 62);
+}
+#nome{
+
+    background-color: black;
+    color:aliceblue;
+}
+
+#email{
+    background-color: black;
+    color:aliceblue;
+}
+
+#senha{
+    background-color: black;
+    color:aliceblue;
+}
+
+.tele{
+    background-color: black;
+    color: aliceblue;
+}
+
+.site{
+    background-color: black;
+    color:aliceblue
+}
