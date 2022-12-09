@@ -8,37 +8,40 @@
     <link rel="stylesheet" href="css/estilos.css" type="text/css">
 </head>
 
-<body>
+<body background="fundo.jpg">
+    <div class="typewriter">
     <h1 class="h1">Cadastro de Funcionários</h1>
-
-    <form action="#" method="post">
-        <p>
-            <label for="nome"><b>Nome: </b></label>
+</div>
+<br>
+    <form style="border-style:dashed; margin: 20px;" class="formulario" action="#" method="post">
+    
+        <p> 
+            <label class="nome"for="nome"><b>Nome: </b></label>
             <input id="nome" name="nome" required placeholder="Nome e Sobrenome"> 
-        </p>
 
+        </p>
         <p>
-            <label for="email"> <b>E-mail: </b></label>
+            <label class="email" for="email"> <b>E-mail: </b></label>
             <input id="email" type="email" name="email" placeholder="usuario@empresa.com"> 
         </p>
 
         <p>
-            <label for="senha"><b>Senha: </b> </label>
+            <label class="senha" for="senha"><b>Senha: </b> </label>
             <input id="senha" type="password" name="senha" required maxlength="6">
         </p>
 
         <p>
             <input class="idade" type="number" placeholder="idade" min="15" max="99"> - 
-            <label for="nascimento"><b>Data de Nascimento </b></label>
+            <label class="data" for="nascimento"><b>Data de Nascimento </b></label>
             <input class="nascimento"  type="date" id="nascimento">
         </p>
-        <p>
+        <p class="camisa" >
           <b> Tamanho da camiseta:
             <input type="radio" value="pequeno" name="camiseta">P
             <input type="radio" value="médio" name="camiseta" checked>M
             <input type="radio" value="grande" name="camiseta">G
         </b> </p>
-        <p>
+        <p class="calcado">
             
             <select name="calcado">
                 <option value=""><b>Tamanho do Calçado</b></option>
@@ -49,15 +52,15 @@
         </p>
 
         <p>
-            <fieldset>
-                <legend><b>Atividades extras</b></legend>
-                <input type="checkbox" value="ing">Inglês
+            <fieldset class="extras">
+                <legend class="ativ"><b>Atividades extras</b></legend>
+                <input class="ing" type="checkbox" >Inglês
                 <input type="checkbox" value="mus">Música
                 <input type="checkbox" value="med">Meditação
             </fieldset>
         </p>
         <p>
-            <label><b>Foto: </b></label>
+            <label class="foto"><b>Foto: </b></label>
             <input class="foto" type="file" accept=".jpg,.png">
         </p>
 
@@ -67,16 +70,17 @@
         <p>
             <input class="tele" type="tel" placeholder="telefone"><br>
             <input class="site"type="url" placeholder="site preferido"><br>
-            <b>cor favorita: </b> <input type="color"><br>
+            <b class="cor">cor favorita: </b> <input type="color"><br>
             <input type="hidden" value="você não me vê, mas eu existo">
-            <b>Satisfação:</b><br>
-             &#x1F625;<input class="semana" type="range" min="0" max="10"> &#x1F600;<br>
-            <input clasa="semana" type="week">
+            <b class="satisfacao">Satisfação:</b><br>
+             &#x1F625;<input type="range" min="0" max="10"> &#x1F600;<br>
+            <input class="semana" type="week">
 
         <p>
             <button class="botao" type="submit">Salvar</button>
             <button class="botao" type="reset">Limpar</button>
         </p>
+   
     </form>
 </body>
 

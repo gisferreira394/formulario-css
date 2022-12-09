@@ -1,11 +1,87 @@
 body{
-    background-color: rgb(75, 156, 152);
+background-image: url(fundo.jpg);
+  padding-top: 10em;
+  display: grid;
+  justify-content: center;
+	-webkit-animation: body 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: body 0.4s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+            
 }
+@-webkit-keyframes body {
+    0% {
+      -webkit-box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0);
+              box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+    100% {
+      -webkit-box-shadow: inset 0 0 14px 0px rgba(0, 0, 0, 0.5);
+              box-shadow: inset 0 0 14px 0px rgba(0, 0, 0, 0.5);
+    }
+  }
+  @keyframes body {
+    0% {
+      -webkit-box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0);
+              box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+    100% {
+      -webkit-box-shadow: inset 0 0 14px 0px rgba(0, 0, 0, 0.5);
+              box-shadow: inset 0 0 14px 0px rgba(0, 0, 0, 0.5);
+    }
+  }
+  
+.typewriter h1 {
+  color:  rgb(139, 68, 118);
+  text-shadow: 2px -2px rgb(255, 255, 255);
+  text-align: center;
+  font-family: monospace;
+  overflow: hidden;  
+  white-space: nowrap; 
+  margin: 0 auto;
+  animation: typing 3.5s steps(120, end) alternate infinite,
+    blink-caret 0.5s step-end infinite, rotateText 3.5s ease alternate infinite;
+    
+}
+@keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent;
+    }
+    10% {
+      border-color: rgb(255, 202, 202);
+      text-align: center;
+    }
+  }
+  
+  @keyframes rotateText {
+    0% {
+      transform: rotate(0);
+    }
+    25% {
+      transform: rotate(10deg) scale(1.5) translateX(10px) skewY(10deg);
+    }
+    75% {
+      transform: rotate(-10deg) scale(0.8) translateX(-10px) skewY(-10deg);
+    }
+    100% {
+      transform: rotate(5deg) scale(1.2) translateX(5px) skewY(5deg);
+    }
+   
+  }
+  
 
 h1{
     color: rgb(255, 184, 160);
-    text-shadow: 2px -2px rgb(66, 62, 62);
-}
+    text-shadow: 2px -2px rgb(0, 0, 0);
+    text-align: center;
+      }
 #nome{
 
     background-color: black;
@@ -63,5 +139,48 @@ h1{
 
 .semana{
     background-color: black;
+    color:rgb(255, 255, 255)
+}
+
+.email{
     color:aliceblue
+}
+.nome{
+    color: aliceblue;
+}
+.senha{ 
+    color: aliceblue;
+}
+    .data{ 
+        color: aliceblue;
+    }
+    .camisa{
+        color: aliceblue;
+    }
+.calcado{
+    color: aliceblue;
+}
+.ativ{
+    color: aliceblue;
+}
+.foto{
+    color: aliceblue;
+}
+.cor{
+    color: aliceblue;
+}
+.satisfacao{
+    color: aliceblue;
+}
+.ing{
+    color: aliceblue;
+}
+.music{
+    color: aliceblue;
+}
+.medi{
+    color: aliceblue;
+}
+.extras{
+    color: aliceblue;
 }
